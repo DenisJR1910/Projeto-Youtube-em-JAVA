@@ -1,0 +1,47 @@
+-------------------------------------------------------------------------------
+Test set: runner.RunTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.165 s <<< FAILURE! -- in runner.RunTest
+runner.RunTest.initializationError -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.IllegalArgumentException: 
+Couldn't create a file output stream for 'src\main\report'.
+Make sure the the file isn't a directory.
+
+Note: This usually happens when plugins write to colliding paths.
+For example: 'json:target/cucumber/report.json, html:target/cucumber'
+You can fix this by making the paths do no collide.
+For example: 'json:target/cucumber/report.json, html:target/cucumber/report.html'
+The details are in the stack trace below:
+	at io.cucumber.core.plugin.PluginFactory.createFileOutputStream(PluginFactory.java:240)
+	at io.cucumber.core.plugin.PluginFactory.openStream(PluginFactory.java:199)
+	at io.cucumber.core.plugin.PluginFactory.convert(PluginFactory.java:166)
+	at io.cucumber.core.plugin.PluginFactory.instantiate(PluginFactory.java:99)
+	at io.cucumber.core.plugin.PluginFactory.create(PluginFactory.java:63)
+	at io.cucumber.core.plugin.Plugins.createPlugins(Plugins.java:32)
+	at io.cucumber.core.plugin.Plugins.<init>(Plugins.java:25)
+	at io.cucumber.junit.Cucumber.<init>(Cucumber.java:160)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:314)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.io.FileNotFoundException: C:\QAx\Teste Youtube\Projeto-Youtube-em-JAVA\automacao-youtube\src\main\report (Acesso negado)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:255)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:210)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at io.cucumber.core.plugin.PluginFactory.createFileOutputStream(PluginFactory.java:237)
+	... 24 more
+
