@@ -14,9 +14,9 @@ Antes de executar o projeto, instale:
 ## ✅ 1.1 Java JDK  
 
 - **Versão recomendada:** JDK 17
-- 
+  
 - Funciona também em: JDK 11 ou JDK 8
-- 
+  
 Verificar instalação:
 
 ```java -version```
