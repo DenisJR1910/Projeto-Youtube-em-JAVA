@@ -142,5 +142,7 @@ public class RunCucumberTest {
 ```
 
 Para rodar:
+
 ➡ Clique com o botão direito na classe
+
 ➡ Run 'RunCucumberTest'
