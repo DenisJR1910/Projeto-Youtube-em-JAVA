@@ -1,75 +1,89 @@
-📌 1. Pré-requisitos obrigatórios
+# 🎬 Automação YouTube em Java (Selenium + Maven)
+
+Este projeto realiza uma automação simples utilizando **Java + Selenium WebDriver**, abrindo o site do YouTube automaticamente.  
+Ideal para estudos de automação web e primeiros passos com Selenium, Maven e execução via Runner ou classe principal.
+
+---
+
+# 📌 1. Pré-requisitos obrigatórios
 
 Antes de executar o projeto, instale:
-1.1 Java JDK
 
-Versão recomendada: JDK 17
+---
 
-Também funciona com: JDK 11 ou JDK 8
+## ✅ 1.1 Java JDK  
+- **Versão recomendada:** JDK 17  
+- Funciona também em: JDK 11 ou JDK 8
 
-Para verificar se o Java está instalado:
-
+Verificar instalação:
+```bash
 java -version
-
-1.2 Maven
-
+✅ 1.2 Maven
 Versão recomendada: Maven 3.8+
 
-Verificar:
+Verificar instalação:
 
+bash
+Copiar código
 mvn -version
-
-1.3 Navegador Google Chrome
-
-Atualizado
+✅ 1.3 Navegador Google Chrome
+Mantenha sempre atualizado
 
 Versão recomendada: Chrome 120+
 
-1.4 ChromeDriver (Gerenciado automaticamente)
+✅ 1.4 ChromeDriver (Gerenciado automaticamente)
+O projeto pode utilizar:
 
-Seu projeto pode usar:
 ✔ WebDriverManager (recomendado)
-ou
-✔ ChromeDriver manual
 
-Se quiser WebDriverManager, precisa adicionar no pom.xml:
+ou ChromeDriver manual
 
+Dependência para usar WebDriverManager:
+
+xml
+Copiar código
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>5.7.0</version>
 </dependency>
-
-▶️ 4. Como rodar o projeto
-PASSO 1 — Clonar o projeto
+📁 2. Clonar o projeto
+bash
+Copiar código
 git clone https://github.com/DenisJR1910/Projeto-Youtube-em-JAVA.git
 cd Projeto-Youtube-em-JAVA
-
-PASSO 2 — Abrir no IntelliJ ou Eclipse
-
+🧰 3. Abrir o projeto no IntelliJ ou Eclipse
 No IntelliJ:
+Abra o programa
 
-File → Open → escolha o projeto
+Vá em File → Open
 
-Ele irá carregar automaticamente o Maven
+Selecione a pasta do projeto
 
-PASSO 3 — Instalar dependências
+O IntelliJ irá carregar o Maven automaticamente
 
-No terminal do IntelliJ:
+🔧 4. Instalar dependências
+No terminal dentro do IDE execute:
 
+bash
+Copiar código
 mvn clean install
+Se tudo estiver correto, o Maven fará o download de:
 
+Selenium WebDriver
 
-Se tudo ok → Maven baixa Selenium + WebDriverManager.
+WebDriverManager
 
-PASSO 4 — Executar a Automação
+Outras dependências definidas no pom.xml
 
-Existem duas formas de rodar:
+▶️ 5. Como executar a automação
+Existem duas maneiras de rodar o projeto:
 
-✔ FORMA 1 – Executar a classe principal
+✔️ FORMA 1 — Executar a classe principal
+Exemplo de Main:
 
-Exemplo (pode variar dependendo de como você criou):
-
+java
+Copiar código
 package br.com.youtube;
 
 public class Main {
@@ -77,15 +91,17 @@ public class Main {
         Util.openWeb("https://www.youtube.com");
     }
 }
+Para rodar:
+➡ Clique com o botão direito na classe
+➡ Run 'Main'
 
+✔️ FORMA 2 — Executar com o Runner do Cucumber
+(caso o projeto utilize BDD)
 
-No IntelliJ:
-➡ clique com botão direito > Run 'Main'
+Exemplo de Runner:
 
-✔ FORMA 2 – Executar com Runner do Cucumber (se seu projeto tiver Cucumber)
-
-Classe exemplo:
-
+java
+Copiar código
 package runner;
 
 import org.junit.platform.suite.api.ConfigurationParameter;
@@ -101,19 +117,6 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, html:report.html")
 public class RunCucumberTest {
 }
-
-
-Rodar:
-
-➡ Clique com botão direito na classe RunCucumberTest
+Para rodar:
+➡ Clique com o botão direito na classe
 ➡ Run 'RunCucumberTest'
-
-🧪 5. O que a automação faz
-
-Quando executada:
-
-Abre o navegador Chrome
-
-Entra em https://www.youtube.com
-
-Finaliza o navegador após o teste (Hooks)
