@@ -29,6 +29,9 @@ Verificar instalação:
 ✅ 1.2 Maven
 Versão recomendada: Maven 3.8+
 
+ 📥 **Download oficial do Maven**
+ https://maven.apache.org/download.cgi
+
 Verificar instalação:
 
 ```mvn -version```
@@ -76,6 +79,7 @@ Selecione a pasta do projeto
 
 O IntelliJ irá carregar o Maven automaticamente
 
+---
 🔧 4. Instalar dependências
 
 No terminal dentro do IDE execute:
