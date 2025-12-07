@@ -7,6 +7,7 @@ Ideal para estudos de automação web e primeiros passos com Selenium, Maven e e
 
 # 📌 1. Pré-requisitos obrigatórios
 
+
 Antes de executar o projeto, instale:
 
 ---
@@ -16,6 +17,9 @@ Antes de executar o projeto, instale:
 - **Versão recomendada:** JDK 17
   
 - Funciona também em: JDK 11 ou JDK 8
+
+  📥 **Download oficial do Java JDK 17:**  
+https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
   
 Verificar instalação:
 
