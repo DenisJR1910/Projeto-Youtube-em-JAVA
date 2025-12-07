@@ -25,6 +25,7 @@ Verificar instalação:
 
 ```java -version```
 
+---
 ✅ 1.2 Maven
 Versão recomendada: Maven 3.8+
 
@@ -32,6 +33,7 @@ Verificar instalação:
 
 ```mvn -version```
 
+---
 ✅ 1.3 Navegador Google Chrome
 
 Mantenha sempre atualizado
@@ -39,6 +41,7 @@ Mantenha sempre atualizado
 Versão recomendada: Chrome 120+
 
 
+---
 ✅ 1.4 ChromeDriver (Gerenciado automaticamente)
 O projeto pode utilizar:
 
@@ -55,11 +58,13 @@ Dependência para usar WebDriverManager:
 </dependency>
 ```
 
+---
 📁 2. Clonar o projeto
 
 git clone ```https://github.com/DenisJR1910/Projeto-Youtube-em-JAVA.git
 cd Projeto-Youtube-em-JAVA```
 
+---
 🧰 3. Abrir o projeto no IntelliJ ou Eclipse
 No IntelliJ:
 
@@ -85,6 +90,7 @@ WebDriverManager
 
 Outras dependências definidas no pom.xml
 
+---
 ▶️ 5. Como executar a automação
 
 Existem duas maneiras de rodar o projeto:
