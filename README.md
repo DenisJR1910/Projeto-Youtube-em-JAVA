@@ -41,7 +41,6 @@ Verificar instalação:
 
 Mantenha sempre atualizado
 
-Versão recomendada: Chrome 120+
 
 
 ---
