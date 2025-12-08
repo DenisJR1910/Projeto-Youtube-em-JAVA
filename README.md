@@ -1,4 +1,4 @@
-# 🎬 Automação YouTube em Java (Selenium + Maven)
+#  Automação YouTube em Java (Selenium + Maven)
 
 Este projeto realiza uma automação simples utilizando **Java + Selenium WebDriver**, abrindo o site do YouTube automaticamente.  
 Ideal para estudos de automação web e primeiros passos com Selenium, Maven e execução via Runner ou classe principal.
@@ -18,7 +18,7 @@ Antes de executar o projeto, instale:
   
 - Funciona também em: JDK 11 ou JDK 8
 
-  📥 **Download oficial do Java JDK 17:**  
+   **Download oficial do Java JDK 17:**  
 https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
   
 Verificar instalação:
@@ -29,7 +29,7 @@ Verificar instalação:
 ✅ 1.2 Maven
 Versão recomendada: Maven 3.8+
 
- 📥 **Download oficial do Maven**
+  **Download oficial do Maven**
  https://maven.apache.org/download.cgi
 
 Verificar instalação:
@@ -61,13 +61,13 @@ Dependência para usar WebDriverManager:
 ```
 
 ---
-📁 2. Clonar o projeto
+ 2. Clonar o projeto
 
 git clone ```https://github.com/DenisJR1910/Projeto-Youtube-em-JAVA.git
 cd Projeto-Youtube-em-JAVA```
 
 ---
-🧰 3. Abrir o projeto no IntelliJ ou Eclipse
+ 3. Abrir o projeto no IntelliJ ou Eclipse
 No IntelliJ:
 
 Abra o programa
@@ -94,7 +94,7 @@ WebDriverManager
 Outras dependências definidas no pom.xml
 
 ---
-▶️ 5. Como executar a automação
+ 5. Como executar a automação
 
 Existem duas maneiras de rodar o projeto:
 
